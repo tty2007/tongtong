@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="loader.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>test</title>
+</head>
+<body>
+    <div class="top_bg">
+        <div id="title">
+            <span>小刘的STRANGE小站</span>
+        </div> 
+    </div>
+
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+        </div>
+        <span>What we need &nbsp may just wait...</span>
+    </div>
+    
+    <center>
+        <div class="btns">
+            <button class="nav_btn_now" onclick="top.location = 'index.html'">主页</button>
+            <div class="dropdown">
+                <button class="dropbtn">菜单一</button>
+                <div class="dropdown-content">
+                    <a href="">菜单一</a>
+                    <a href="">菜单一</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">菜单二</button>
+                <div class="dropdown-content">
+                    <a href="">菜单二</a>
+                    <a href="">菜单二</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">菜单三</button>
+                <div class="dropdown-content">
+                    <a href="#">菜单三</a>
+                    <a href="#">菜单三</a>
+                    <a href="#">菜单三</a>
+    `            </div>
+            </div>
+        </div>
+    </center>
+    
+    
+    <div class="bottom_bg"></div>
+    
+    <script>setTimeout(function() {
+        
+        setTimeout(function() {
+            $(".loader").fadeOut(2000);
+        }, 1000);
+    }, 2000);
+    </script>
+</body>
+
+
+</html>
