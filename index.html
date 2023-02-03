@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index-css/index.css">
+    <link rel="stylesheet" type="text/css" href="index-css/loader.css">
+    <link rel="stylesheet" type="text/css" href="index-css/jquery.growl.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="index-js/index.js"></script>
+    <script type="text/javascript" src="index-js/jquery.growl.js"></script>
+    <script type="text/javascript" src="index-js/loader.js"></script>
+    <title>test</title>
+</head>
+<body onselectstart="return false">
+<!--加载页-->
+    <!--<div id="load">
+      <div id="loader">
+        <div id="lemon"></div>
+        <div id="straw"></div>
+        <div id="glass">
+            <div id="cubes">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="drink"></div>
+            <span id="counter"></span>
+        </div>
+        <div id="coaster"></div>
+      </div>
+      <span class="loading">loading...</span>
+      <span class="complete">complete!</span>
+      <footer>Please wait while<br>we fill up your glass...</footer>
+    </div>-->
+<!--菜单栏-->    
+  <div class="header">
+    <div id="input-box">
+      <input type="text" id="input" placeholder="Enter Something...">
+      <input type="image" class="search" onclick="search()" src="picture/search.jpg">
+    </div>
+    <div class="introduction">
+      <a href="#" target="_blank">介绍</a>
+      <a href="login.html" target="_blank" style="margin-right: 80px;">点我登录</a>
+    </div>
+  </div>
+    
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+  
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li style="cursor:context-menu">Lawrence<span>Web Developer</span></li>
+        <li><a href="#" target="_blank">company</a></li>
+        <li><a href="#" target="_blank">Instagram</a></li>
+        <li><a href="#" target="_blank">Twitter</a></li>
+        <li><a href="#" target="_blank">YouTube</a></li>
+        <li><a id="douyinbtn" onclick="douyin()">作者抖音</a></li>
+      </ul>
+    </div>
+      <div class="douyin" onclick="closedy()">
+        <img id="douyin" src="picture/douyin.jpg">
+      </div>
+    
+    <div id='center' class="main center">
+      <div class="mainInner">
+        <div>PURE CSS SIDEBAR TOGGLE MENU</div>
+      </div>
+      <div class="mainInner">
+        <div>PURE CSS SIDEBAR TOGGLE MENU</div>
+      </div>
+      <div class="mainInner"></div>
+        <div>PURE CSS SIDEBAR TOGGLE MENU</div>
+      </div>
+    </div>
+    
+
+
+
+
+</body>
+</html>

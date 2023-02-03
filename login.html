@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://codepen.io/danielkvist/pen/LYNVyPL -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Sign Up -->
+    <div class="container__form container--signup">
+      <form action="signup.php" method="post" class="form"  >
+        <h2 class="form__title">欢迎<br><br>Sign Up</h2>
+        <input type="text" placeholder="User" class="input" name="userup" required>
+        <input type="password" placeholder="Password" class="input" name="pwdup" required>
+        <button class="btn6" type="submit">注册</button>
+      </form>
+    </div>
+
+    <!-- Sign In -->
+    <div class="container__form container--signin">
+      <form action="signin.php" method="post" class="form" id="form2">
+        <h2 class="form__title">欢迎<br><br>Sign In</h2>
+        <input type="text" placeholder="User" class="input" name="userin" required>
+        <input type="password" placeholder="Password" class="input" name="pwdin" required>
+        <a href="forgot.html" class="link">Forgot your password?</a>
+        <button class="btn6" type="submit">登录</button>
+      </form>
+    </div>
+
+    <!-- Overlay -->
+    <div class="container__overlay">
+      <div class="overlay">
+        <div class="overlay__panel overlay--left">
+          <button class="btn" id="signIn">登录</button>
+        </div>
+        <div class="overlay__panel overlay--right">
+          <button class="btn" id="signUp">注册</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const signInBtn = document.getElementById("signIn");
+    const signUpBtn = document.getElementById("signUp");
+    const fistForm = document.getElementById("form1");
+    const secondForm = document.getElementById("form2");
+    const container = document.querySelector(".container");
+
+    signInBtn.addEventListener("click", () => {
+      container.classList.remove("right-panel-active");
+    });
+
+    signUpBtn.addEventListener("click", () => {
+      container.classList.add("right-panel-active");
+    });
+
+    fistForm.addEventListener("submit", (e) => e.preventDefault());
+    secondForm.addEventListener("submit", (e) => e.preventDefault());
+  </script>
+</body>
+
+</html>

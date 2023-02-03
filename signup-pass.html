@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册成功</title>
+    <style>
+        body {
+	        align-items: center;
+	        background-color: var(--white);
+	        background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
+	        background-attachment: fixed;
+	        background-position: center;
+	        background-repeat: no-repeat;
+	        background-size: cover;
+	        display: grid;
+	        height: 100vh;
+	        place-items: center;
+            }
+        div{
+            width: 50vw;
+            height: 200px;
+            background-color: #e9e9e9;
+            border-radius: 10px;
+            box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25);
+            text-align: center;
+            max-width: 400px;
+            min-width: 250px;
+            }
+        span{
+            top: px;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            font-family: STsong;
+            font-size: 30px;
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <span><br>注册成功！<br>5秒后会跳转至主页面</span>
+      </div>
+      <script>
+        function locate(){
+            window.location.href='index.html'
+        }
+        setTimeout(locate,5000)
+      </script>
+</body>
+</html>
