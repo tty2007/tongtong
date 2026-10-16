@@ -14,7 +14,7 @@ function closedy(){
 function search(){
     var text = document.getElementById('input').value
     if(text == "20070628"){
-        $.growl.notice({title: "提示！", message: "真牛逼这你也能找到菜单" })
+        $.growl.notice({title: "提示！", message: "真牛逼这你也能找到彩蛋" })
     }
     else{
         $.growl.error({title: "错误！", message:"未查询到有关内容"});
